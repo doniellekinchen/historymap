@@ -6,6 +6,7 @@
        
         <h3>{{ state.name }} ({{ state.abbreviation }}) <span v-if="state.hasSundownTowns">☀️</span></h3>
         <p>Population: {{ state.population }}</p>
+        <p>State Bird: {{ state.bird }}</p>
         <p><a :href="state.history" target="_blank">Learn more</a></p>
         <button @click="close">Close</button>
       </div>

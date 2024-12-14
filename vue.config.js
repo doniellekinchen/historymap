@@ -1,5 +1,4 @@
 // vue.config.js
-const path = require('path');
 module.exports = {
   chainWebpack: (config) => {
   const svgRule = config.module.rule('svg');
