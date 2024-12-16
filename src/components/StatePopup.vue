@@ -1,10 +1,15 @@
 <template>
     <div class="state-popup" v-if="show">
   
-    <!-- <p>Sundown Towns: {{ state.hasSundownTowns ? 'Yes' : 'No' }}</p> -->
       <div class="popup-content">    
        
-        <h3>{{ state.name }} ({{ state.abbreviation }}) <span v-if="state.hasSundownTowns">☀️</span></h3>
+        <h3>
+  {{ state.name }} ({{ state.abbreviation }})</h3>
+  <span v-if="state.hasSundownTowns">☀️</span>
+  <span v-if="state.hasHurricanes">🌀</span>
+  <span v-if="state.hasTornados">🌪️</span>
+  <span v-if="state.hasVolcanoes">🌋</span>
+
         <p>Population: {{ state.population }}</p>
         <p>State Bird: {{ state.bird }}</p>
         <p><a :href="state.history" target="_blank">Learn more</a></p>

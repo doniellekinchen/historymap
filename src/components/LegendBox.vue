@@ -16,8 +16,9 @@
           { icon: '🔴', label: 'Republican-leaning State' },
           { icon: '🔵', label: 'Democrat-leaning State' },
           { icon: '☀️', label: 'Has Sundown Towns'},
-          { icon: '🤰', label: 'Pro-Life'},
-          { icon: '💊', label: 'Pro-Choice'}
+          { icon: '🌀', label: 'Hurricane Prone'},
+          { icon: '🌪️', label: 'Tornado Prone'},
+          { icon: '🌋', label: 'Has Volcanos (active and inactive)'}
           // Add more legend items as needed
         ]
       }
