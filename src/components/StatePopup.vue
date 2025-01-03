@@ -12,7 +12,11 @@
 
         <p>Population: {{ state.population }}</p>
         <p>State Bird: {{ state.bird }}</p>
-        <p><a :href="state.history" target="_blank">Learn more</a></p>
+        <p>
+  <router-link :to="`/state/${state.name}`">Learn More</router-link>
+</p>
+
+
         <button @click="close">Close</button>
       </div>
     </div>

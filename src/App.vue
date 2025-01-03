@@ -22,8 +22,8 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background-color: #f0f8ff; /* Your desired background color */
-  height: 100vh; /* This ensures the background covers the full viewport height */
+  background-color: #f0f8ff; 
+  height: 100vh;
 }
 
 #app {

@@ -1,19 +1,19 @@
-// src/router.js
-import { createRouter, createWebHistory } from 'vue-router';
-import UsMap from '@/components/UsMap.vue';
-import StateDetails from '@/components/StateDetails.vue';
-import AboutPage from '@/views/AboutPage.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import StatePage from '@/components/StatePage.vue';
+import FullBlogPost from '@/components/FullBlogPost.vue';
+
+Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: UsMap },
-  { path: '/state/:stateAbbr', component: StateDetails, props: true },
-  { path: '/', name: 'Home', component: UsMap},
-  { path: '/aboutpage', name: 'About', component: AboutPage}
+  { path: '/:stateName', name: 'StatePage', component: StatePage, props: true },
+  { path: '/state/:stateName/:postName', component: () => import('@/components/FullBlogPost.vue'), props: true }
+
 ];
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes
+const router = new VueRouter({
+  mode: 'history',
+  routes,
 });
 
 export default router;

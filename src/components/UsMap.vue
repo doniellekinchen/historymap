@@ -97,7 +97,7 @@ export default {
 .state-path.hovered[data-state='PA'],
 .state-path.hovered[data-state='AK'],
 .state-path.hovered[data-state='MI'] {
-  fill: #E81B23; /* Republican-leaning state hover color */
+  fill: #E81B23; /* Republican-leaning states */
 }
 
 .state-path.hovered[data-state='WA'],
@@ -120,7 +120,7 @@ export default {
 .state-path.hovered[data-state='DC'],
 .state-path.hovered[data-state='NY'],
 .state-path.hovered[data-state='VA'] {
-  fill: #99ddff; /* Democrat-leaning state hover color */
+  fill: #99ddff; /* Democrat-leaning state */
 }
 
 
